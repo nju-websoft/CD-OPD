@@ -2,7 +2,7 @@
 
 Code for **CD-OPD**, combining Contextual Digest construction with online meta-reweighting.
 
-![CD-OPD framework](assets/framework.svg)
+![CD-OPD framework](Figure3.pdf)
 
 ## Installation
 
