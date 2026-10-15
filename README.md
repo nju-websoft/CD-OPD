@@ -86,6 +86,3 @@ python -m opd.eval.cfr \
 CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=2 python -m pytest -q tests
 ```
 
-## License
-
-See [LICENSE](LICENSE) and [NOTICE](NOTICE) for licensing and third-party attribution.
