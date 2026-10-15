@@ -1,0 +1,10 @@
+{
+  "micro_batch_size": 64,
+  "native_speculative_tokens": 4,
+  "vllm_max_num_seqs": 1024,
+  "vllm_memory_fraction": 0.45,
+  "enforce_eager": false,
+  "independent_memory_fraction": 0.12,
+  "independent_max_num_seqs": 16,
+  "graph_max_num_seqs": 16
+}

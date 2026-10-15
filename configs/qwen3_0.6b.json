@@ -1,0 +1,56 @@
+{
+  "student_model": "models/Qwen3-0.6B",
+  "teacher_model": "models/Qwen3-4B-Instruct-2507",
+  "train_data": "data/train.parquet",
+  "output_dir": "runs/cd_opd_0.6b",
+  "student_devices": [
+    0,
+    1
+  ],
+  "teacher_devices": [
+    2,
+    3
+  ],
+  "handoff_batch_size": 128,
+  "seed": 42,
+  "epochs": 1,
+  "max_steps": null,
+  "save_every": 5,
+  "lr": 1e-06,
+  "weight_decay": 0.01,
+  "adam_betas": [
+    0.9,
+    0.999
+  ],
+  "clip_ratio": 0.2,
+  "max_grad_norm": 1.0,
+  "score_chunk_tokens": 128,
+  "gradient_checkpointing": true,
+  "reward_function": "opd.reward.math_reward:compute_score",
+  "relay": {
+    "trigger_topk": 5,
+    "max_takeovers": 2,
+    "paragraphs_per_takeover": 3,
+    "max_takeover_tokens": 256,
+    "max_prompt_tokens": 2048,
+    "max_response_tokens": 16384,
+    "temperature": 1.0,
+    "top_p": 1.0
+  },
+  "handoff": {
+    "enabled": true,
+    "protocol": "contextual_digest",
+    "graph_max_new_tokens": 2048,
+    "max_summary_tokens": 1024,
+    "max_nodes": 32,
+    "graph_max_model_len": 34817,
+    "dependency_graph": true
+  },
+  "meta": {
+    "enabled": true,
+    "task_batch_size": 8,
+    "task_samples": 2,
+    "task_max_response_tokens": 16384,
+    "weight_strength": 1.0
+  }
+}

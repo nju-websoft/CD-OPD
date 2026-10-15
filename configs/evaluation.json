@@ -1,0 +1,17 @@
+{
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_new_tokens": 32768,
+  "disable_thinking": true,
+  "seed": 42,
+  "samples": {
+    "aime24": 32,
+    "aime25": 32,
+    "aime26": 32,
+    "math500": 4,
+    "amc23": 32,
+    "olympiadbench": 4,
+    "hmmt_feb_2026": 32,
+    "hmmt_nov_2025": 32
+  }
+}

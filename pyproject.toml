@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cd-opd"
+version = "0.1.0"
+description = "Contextual Digest for On-Policy Distillation"
+requires-python = ">=3.12"
+dynamic = ["dependencies"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+cd-opd-train = "opd.contextual_digest.train_native:main"
+cd-opd-train-hf = "opd.contextual_digest.train:main"
+cd-opd-evaluate = "opd.eval.paper:main"
+cd-opd-cfr = "opd.eval.cfr:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["opd*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

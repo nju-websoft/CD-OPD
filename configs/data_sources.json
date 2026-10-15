@@ -1,0 +1,47 @@
+{
+  "aime24": {
+    "repo_id": "AI-MO/aimo-validation-aime",
+    "revision": "13f9e12f613e720c2a2b2f345dd04b998a29494d",
+    "file": "data/train-00000-of-00001.parquet"
+  },
+  "aime25": {
+    "repo_id": "MathArena/aime_2025",
+    "revision": "c94da77eb22bbd6439e62a323bec18493a421302",
+    "file": "data/train-00000-of-00001.parquet"
+  },
+  "aime26": {
+    "repo_id": "MathArena/aime_2026",
+    "revision": "d2de22f3c656b4f56cf8981212186377d1e23bc3",
+    "file": "data/train-00000-of-00001.parquet"
+  },
+  "math500": {
+    "repo_id": "HuggingFaceH4/MATH-500",
+    "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+    "file": "test.jsonl"
+  },
+  "amc23": {
+    "repo_id": "AI-MO/aimo-validation-amc",
+    "revision": "69d78a4a2c840e82d69af6bc742bda09005f6316",
+    "file": "data/train-00000-of-00001.parquet"
+  },
+  "hmmt_feb_2026": {
+    "repo_id": "MathArena/hmmt_feb_2026",
+    "revision": "02fba4f74d8e68e73e66a02d540fd979c05c274c",
+    "file": "data/train-00000-of-00001.parquet"
+  },
+  "hmmt_nov_2025": {
+    "repo_id": "MathArena/hmmt_nov_2025",
+    "revision": "118dbfb45c4c9467c672268ed55166642897aa46",
+    "file": "data/train-00000-of-00001.parquet"
+  },
+  "olympiadbench": {
+    "repo_id": "Hothan/OlympiadBench",
+    "revision": "91184b52131e7fc9455fef848035173aea8cc01a",
+    "file": "OlympiadBench/OE_TO_maths_en_COMP/OE_TO_maths_en_COMP.parquet"
+  },
+  "train": {
+    "repo_id": "open-r1/DAPO-Math-17k-Processed",
+    "revision": "31dd309567e3da778038cc87d868b6097a3ccf68",
+    "file": "en/train-00000-of-00001.parquet"
+  }
+}
